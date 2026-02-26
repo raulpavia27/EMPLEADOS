@@ -1,0 +1,29 @@
+@import "tailwindcss";
+
+@theme {
+  --color-guinda: #800000;
+  --color-guinda-dark: #660000;
+  --color-guinda-light: #a00000;
+}
+
+@layer base {
+  @media print {
+    .no-print {
+      display: none !important;
+    }
+    body {
+      background: white !important;
+      color: black !important;
+    }
+    .print-only {
+      display: block !important;
+    }
+    .print-container {
+      width: 100% !important;
+      margin: 0 !important;
+      padding: 0 !important;
+      box-shadow: none !important;
+    }
+  }
+}
+
